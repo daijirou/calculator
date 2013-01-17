@@ -15,6 +15,9 @@ double y;
 double shou;
 int answer;
 double Z;
+double w;
+double s;
+    
 }
 
 
@@ -42,3 +45,4 @@ double Z;
 - (IBAction)Re:(id)sender;
 
 @end
+
