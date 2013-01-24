@@ -7,42 +7,35 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StateMachine.h"
 
 @interface ViewController : UIViewController{
 
-double x;
-double y;
-double shou;
-int answer;
-double Z;
-double w;
-double s;
+    
+double A;
+double B;
     
 }
-
+@property StateMachine* model;
 
 @property enum {x,y} state;
 @property (weak, nonatomic) IBOutlet UILabel *result;
-- (IBAction)zero:(id)sender;
-- (IBAction)dot:(id)sender;
-- (IBAction)plusminus:(id)sender;
-- (IBAction)equarl:(id)sender;
-- (IBAction)one:(id)sender;
-- (IBAction)two:(id)sender;
-- (IBAction)three:(id)sender;
-- (IBAction)kakko:(id)sender;
-- (IBAction)four:(id)sender;
-- (IBAction)five:(id)sender;
-- (IBAction)six:(id)sender;
-- (IBAction)plus:(id)sender;
-- (IBAction)seven:(id)sender;
-- (IBAction)eight:(id)sender;
-- (IBAction)nine:(id)sender;
-- (IBAction)minus:(id)sender;
-- (IBAction)AC:(id)sender;
-- (IBAction)waru:(id)sender;
-- (IBAction)multiply:(id)sender;
-- (IBAction)Re:(id)sender;
-
-@end
+- (IBAction)zero:(id)sender;//0
+- (IBAction)dot:(id)sender;//小数点
+- (IBAction)equal:(id)sender;//=
+- (IBAction)one:(id)sender;//1
+- (IBAction)two:(id)sender;//2
+- (IBAction)three:(id)sender;//3
+- (IBAction)four:(id)sender;//4
+- (IBAction)five:(id)sender;//5
+- (IBAction)six:(id)sender;//6
+- (IBAction)plus:(id)sender;//+
+- (IBAction)seven:(id)sender;//7
+- (IBAction)eight:(id)sender;//8
+- (IBAction)nine:(id)sender;//9
+- (IBAction)minus:(id)sender;//-
+- (IBAction)AC:(id)sender;//AC
+- (IBAction)waru:(id)sender;//÷
+- (IBAction)multiply:(id)sender;//×
+ @end
 
