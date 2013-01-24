@@ -96,7 +96,7 @@
 }
 
 
-- (IBAction)AC:(id)sender {
+- (IBAction)AC:(id)sender {//ACを押したとき
     [model kansuu];
     
      [[self result]setText:[NSString stringWithFormat:@"%d",0]];
@@ -117,19 +117,20 @@
     [[self result]setText:[NSString stringWithFormat:@"%g",B]];
 }
 
-- (IBAction)waru:(id)sender {
-    B = [model calc];
-    [model fugou:4];
-    [[self result]setText:[NSString stringWithFormat:@"%d",0]];
-       
-    [[self result]setText:[NSString stringWithFormat:@"%g",B]];
-}
 
-- (IBAction)multiply:(id)sender {
+- (IBAction)multiply:(id)sender {//×を押したとき
     B = [model calc];
     [model fugou:3];
     [[self result]setText:[NSString stringWithFormat:@"%d",0]];
        
     [[self result]setText:[NSString stringWithFormat:@"%g",B]];
 }
+- (IBAction)waru:(id)sender {//÷を押したとき
+    B = [model calc];
+    [model fugou:4];
+    [[self result]setText:[NSString stringWithFormat:@"%d",0]];
+    
+    [[self result]setText:[NSString stringWithFormat:@"%g",B]];
+}
+
 @end

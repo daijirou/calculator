@@ -47,11 +47,15 @@ int shou=0;
             
             keisan=1;
             break;
+       
+        case 0:
+            break;
     }
+    answer = 0;
     return Z;
 }
 
-- (double)number:(double)a{
+- (double)number:(double)a{//数字の入力
     switch (keisan) {
             
         case 0:  //最初の入力をxとする
@@ -95,7 +99,7 @@ int shou=0;
     return 0;
 }
 
-- (void)fugou:(double)b{
+- (void)fugou:(double)b{//符号を押したとき
     answer = b;
     if (keisan==0) {
         
@@ -142,7 +146,7 @@ int shou=0;
     
 }
 
-- (void)kansuu{
+- (void)kansuu{//関数の定義
     x=0;
     y=0;
     Z=0;
