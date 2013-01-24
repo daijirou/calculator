@@ -16,14 +16,14 @@ int n=1;
 int shou=0;
 
 
-- (double)calc{
+- (double)calc{//=を押したとき
     switch(answer){
         case 1: //足し算の計算
             Z=x+y;//xの入力とyの入力を足す
             
             x=Z;
             y=0;
-            keisan=1;
+            keisan=0;
             break;
             
         case 2: //引き算の計算
@@ -31,25 +31,23 @@ int shou=0;
             
             x=Z;
             y=0;
-            keisan=1;
+            keisan=0;
             break;
             
         case 3://掛け算の計算
             Z=x*y;//xの入力とyの入力を掛ける
             x=Z;
-            
-            keisan=1;
+            y=0;
+            keisan=0;
             break;
             
         case 4://割り算の計算
             Z=x/y;//xの入力とyの入力を割る
             x=Z;
-            
-            keisan=1;
+            y=0;
+            keisan=0;
             break;
-       
-        case 0:
-            break;
+   
     }
     answer = 0;
     return Z;
@@ -109,6 +107,7 @@ int shou=0;
         
     }else
     {    switch(answer){
+            
         case 1:
             
             
